@@ -38,7 +38,7 @@ async function getBooks() {
 // Funzione per creare una carta per ogni libro
 function createBookCard(book, bookList) {
   const col = document.createElement("div");//crea div e colonne
-  col.className = "col-md-2 col-lg-3 my-2";
+  col.className = "col-md-4 col-lg-3 my-2";
 
   col.innerHTML = `
     <div class="card h-100">
