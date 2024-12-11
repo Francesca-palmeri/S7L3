@@ -1,6 +1,6 @@
 const url = "https://striveschool-api.herokuapp.com/books"; //costante per richiamare dopo l'API
-const bookList = document.getElementById("bookList"); 
-const arrayOfBooks = [];
+const bookList = document.getElementById("bookList"); //per recuperare l'html
+const arrayOfBooks = [];//array vuoto per iterare e salvare i dati dei libri e lavorarli dopo
 
 // Chiama la funzione getBooks quando la pagina viene caricata
 document.addEventListener("DOMContentLoaded", init);
@@ -45,7 +45,7 @@ function createBookCard(book, bookList) {
       <img src="${book.img}" class="card-img-top" alt="Copertina del libro">
       <div class="card-body">
         <h5 class="card-title">${book.title}</h5>
-        <p class="card-text">${book.price}</p>
+        <p class="card-text">€${book.price}</p>
         <button class="btn btn-danger btn-remove">Scarta</button>
       </div>
     </div>
