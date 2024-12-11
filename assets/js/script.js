@@ -45,7 +45,7 @@ function createBookCard(book, bookList) {
       <img src="${book.img}" class="card-img-top" alt="Copertina del libro">
       <div class="card-body">
         <h5 class="card-title">${book.title}</h5>
-        <p class="card-text">€${book.price}</p>
+        <p class="card-text">${book.price}</p>
         <button class="btn btn-danger btn-remove">Scarta</button>
       </div>
     </div>
